@@ -6,7 +6,7 @@ import Clarifai from 'clarifai';
 import './App.css';
 
 const app = new Clarifai.App({
-  apiKey: 'f8fb7dcf2f9648e384f5cf0f56804a31'
+  apiKey: '7d5e7412bf3b49ecac7031d13d8fab3b'
 });
 
 class App extends Component {
@@ -23,13 +23,14 @@ class App extends Component {
 
  onButtonSubmit = () => {
    console.log('click');
-   app.models.predict("a403429f2ddf4b49b307e318f00e528b", "https://samples.clarifai.com/face-det.jpg").then(
+   app.models.predict("Cat Breeds", "https://tailandfur.com/wp-content/uploads/2016/01/30-Cute-Smiling-Cat-Pictures-6.jpg").then(
     function(response) {
       // do something with response
       console.log(response);
     },
     function(err) {
       // there was an error
+      console.log(err);
       
     }
   );
