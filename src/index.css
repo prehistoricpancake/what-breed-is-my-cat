@@ -8,3 +8,7 @@ body {
 button {
   cursor: pointer;
 }
+
+.centre{
+  justify-content: center;
+}

@@ -2,4 +2,7 @@
 .Tilt {
   background: linear-gradient(89deg, #FF5EDF 0%, #04C8DE 100%); /* w3c */
 }
- 
+
+.logo{
+  padding-top: 10px;
+}
