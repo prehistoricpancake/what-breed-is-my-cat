@@ -11,10 +11,11 @@ If you're interested in collaborating, have any suggestions or questions,shoot m
 
 ## Getting Started
 
-1.Clone this repository `git clone https://github.com/joycewambui/What-Breed-Is-My-Cat.git` <br>
+1.Clone this repository `git clone https://github.com/joycewambui/what-breed-is-my-cat.git` 
+<br>
 2.Install all dependencies `npm install`
 <br>
-3 Run it `npm start`
+3. Run it `npm start`
 
 
 ## Future Implementations 
