@@ -37,7 +37,7 @@ class CatRecognition extends React.PureComponent {
       {
         this.props.imageUrl 
         ? <img src={this.props.imageUrl} alt="cats" width='500px' height='auto'/>
-        : <p>Please insert an image</p>
+        : <p>Please insert an image url</p>
       }
        <div className="ph3 mt4">
        {
