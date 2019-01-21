@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/What-Breed-Is-My-Cat/precache-manifest.0970bbd0e4c1c1f72588ddcf3e1686d4.js"
+  "/what-breed-is-my-cat/precache-manifest.6edaf50fb6f07cc5e63edf263deab233.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/What-Breed-Is-My-Cat/index.html", {
+workbox.routing.registerNavigationRoute("/what-breed-is-my-cat/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
