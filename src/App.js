@@ -14,27 +14,51 @@ class App extends Component {
     super();
     this.state ={
       input : '' ,
+      imageUrl:'',
+      // response: []
     }
   }
+
+  // catRecognitionResults = (data) => {
+  //   const catResults = data.response.outputs[0].data.concepts;
+  //   const imageResult = document.getElementById('')
+    
+  // }
+
+
  onInputChange = (event) => {
-    console.log(event.target.value);
+    this.setState({input : event.target.value});
     
  }
 
- onButtonSubmit = () => {
-   console.log('click');
-   app.models.predict("Cat Breeds", "https://tailandfur.com/wp-content/uploads/2016/01/30-Cute-Smiling-Cat-Pictures-6.jpg").then(
-    function(response) {
-      // do something with response
-      console.log(response);
-    },
-    function(err) {
-      // there was an error
-      console.log(err);
-      
-    }
-  );
- }
+ // Clarifai cat breeds model
+
+ 
+onButtonSubmit = () => {
+  this.setState({imageUrl: this.state.input})
+  app.models.predict("Cat Breeds", this.state.input).then(
+   function(response) {
+     // do something with response
+    
+    // this.setState ({response})
+    console.log(response)
+   },
+   function(err) {
+     // there was an error
+     
+   });  
+   }
+  
+
+// onButtonSubmit = () => {
+//   this.setState({imageUrl: this.state.input})
+//   app.models.initModel({id: "Cat Breeds"}).then(catBreeds =>{
+//     return catBreeds.predict(this.state.input);
+//   }).then(response => {
+//     var concepts = response['outputs'] [0] ['data'] ['concepts']
+//   })
+
+//  }
   render(){
 
 
@@ -45,7 +69,9 @@ class App extends Component {
          onInputChange = {this.onInputChange}
         onButtonSubmit={this.onButtonSubmit}
         />
-        <CatRecognition /> 
+        <CatRecognition imageUrl={this.state.imageUrl} 
+        // response ={this.state.response}/> 
+        />
       </div>
 
     );
