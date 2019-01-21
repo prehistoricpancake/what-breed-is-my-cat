@@ -15,48 +15,27 @@ class App extends Component {
     this.state ={
       input : '' ,
       imageUrl:'',
-      results: {}
+      results: []
     }
   }
-
-  // //display results of cat breed I hope
-  // displayCatBreed = (data)=> {
-  //   const catBreed = data.outputs[0].data.concepts;
-  //   const results = document.getElementById('catImageResult');
-  //   const breed = results.name;
-  //   const probability = results.value;
-
-  //   return{
-  //     yourCat: catBreed.name,
-  //     itsBreed: catBreed.value
-
-  //   }
-  // }
-
-  // //display cat Breed
-  // displayResults = (results)=> {
-  //   this.setState({results: results});
-  // }
-
-
+ 
  onInputChange = (event) => {
     this.setState({input : event.target.value});
-    
  }
 
  // Clarifai cat breeds model
 
  
 onButtonSubmit = () => {
-  this.setState({imageUrl: this.state.input})
+  const self = this;
   app.models.predict("Cat Breeds", this.state.input).then(
    function(response) {
-     // do something with response
-    
-    // this.setState ({response})
-    // console.log(response);
+
     var concepts = response['outputs'] [0] ['data'] ['concepts']
-    console.log(concepts);
+    self.setState({
+      results: response['outputs'] [0] ['data'] ['concepts'],
+      imageUrl: self.state.input
+    });
     
    },
    function(err) {
@@ -66,16 +45,6 @@ onButtonSubmit = () => {
    });  
    }
   
-
-// onButtonSubmit = () => {
-//   this.setState({imageUrl: this.state.input})
-//   app.models.initModel({id: "Cat Breeds"}).then(catBreeds =>{
-//     return catBreeds.predict(this.state.input);
-//   }).then(response => {
-//     var concepts = response['outputs'] [0] ['data'] ['concepts']
-//   })
-
-//  }
   render(){
 
 
@@ -87,7 +56,7 @@ onButtonSubmit = () => {
         onButtonSubmit={this.onButtonSubmit}
         />
         <CatRecognition imageUrl={this.state.imageUrl} 
-        // results ={this.state.results}
+        results={this.state.results}
         />
         
         
