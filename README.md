@@ -7,8 +7,6 @@ Version one gives a general overview with values representing the dominant breed
 
 Post a link of your cat's photo and voila!
 
-If you're interested in collaborating, have any suggestions or questions,shoot me a message at `jwambui@protonmail.com`
-
 ## Getting Started
 
 1.Clone this repository `git clone https://github.com/joycewambui/what-breed-is-my-cat.git` 
@@ -26,7 +24,11 @@ If you're interested in collaborating, have any suggestions or questions,shoot m
 <br>
 3.Revision of training data
 
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+
 ## License
-MIT
+[MIT](https://choosealicense.com/licenses/mit/)
 
 
