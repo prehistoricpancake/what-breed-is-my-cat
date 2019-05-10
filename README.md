@@ -5,27 +5,35 @@ Version one gives a general overview with values representing the dominant breed
 
 ## How it works
 
-Post a link of your cat's photo and voila!
+Post a link of your cat's photo on the input field. Upon submission of link, breed matches are generated with the top-most being the most predominant.
 
 ## Getting Started
+<ol>
+  <li>Clone this repository </li>
 
-1.Clone this repository `git clone https://github.com/joycewambui/what-breed-is-my-cat.git` 
-<br>
-2.Install all dependencies `npm install`
-<br>
-3. Run it `npm start`
+`git clone https://github.com/joycewambui/what-breed-is-my-cat.git` 
+
+<li>Install all dependencies </li>
+
+`npm install`
+ <li>Run it </li>
+ 
+ `npm start`
+ </ol>
 
 
 ## Future Implementations 
 
-1.Upload Feature
-<br>
-2.Mobile Version
-<br>
-3.Revision of training data
+<ol>
+  <li>Upload Feature</li>
+
+  <li>Mobile Version</li>
+  
+  <li>Revision of training data for a more precise result of cat breeds</li>
+</ol>
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+[Pull requests](https://help.github.com/en/articles/creating-a-pull-request) are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 
 ## License
