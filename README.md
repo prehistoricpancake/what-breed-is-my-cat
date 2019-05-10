@@ -11,7 +11,7 @@ Post a link of your cat's photo on the input field. Upon submission of link, bre
 <ol>
   <li>Clone this repository </li>
 
-`git clone https://github.com/joycewambui/what-breed-is-my-cat.git` 
+`https://github.com/prehistoricpancake/what-breed-is-my-cat.git` 
 
 <li>Install all dependencies </li>
 
