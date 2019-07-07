@@ -29,7 +29,7 @@ Post a link of your cat's photo on the input field. Upon submission of link, bre
 
   <li>Mobile Version</li>
   
-  <li>Revision of training data for a more precise result of cat breeds</li>
+  <li>Revision of training data for a more precise result regardless of image, requires re-training model</li>
 </ol>
 
 ## Contributing
