@@ -1,0 +1,3 @@
+input CatUrl {
+    url: String!
+}
