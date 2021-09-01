@@ -1,7 +1,9 @@
 # What Breed Is My Cat(v1)
 
-# Update
-Some functionality is broken somewhere, will update once fixed.
+# Update Sep 1
+Some functionality is broken somewhere, will update once fixed. 
+
+# Introduction
 
 Based on 48 breeds of cats, this app shows a range of breeds that your feline friend lies in.
 Version one gives a general overview with values representing the dominant breed.
