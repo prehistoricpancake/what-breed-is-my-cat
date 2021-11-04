@@ -1,7 +1,7 @@
 # What Breed Is My Cat(v1)
 
-# Update: Sep 1, 2021
-Some functionality is broken somewhere, will update once fixed. 
+# Update: Nov 4, 2021
+Url functionality has a bug, will update once fixed.
 
 # Introduction
 
