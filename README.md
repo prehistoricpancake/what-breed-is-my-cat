@@ -1,5 +1,8 @@
 # What Breed Is My Cat(v1)
 
+# Update Jan 27th, 2022
+API not working caused bug
+
 # Update: Nov 4, 2021
 Url functionality has a bug, will update once fixed.
 
