@@ -1,7 +1,11 @@
 # What Breed Is My Cat(v1)
 
+# Update Sep 3rd, 2022
+
+Will use a different API with new set of training data.
+
 # Update Jan 27th, 2022
-API not working caused bug
+Clarifai API not working caused bug.
 
 # Update: Nov 4, 2021
 Url functionality has a bug, will update once fixed.
